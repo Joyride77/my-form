@@ -70,17 +70,22 @@ input {
     width: 100%;
     margin: 10px 0;
     border: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
     padding: 10px;
+}
+
+#white input {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
 }
 
 #blue input {
     background-color: rgb(0, 76, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.638);
 }
 
 #blue select {
     background-color: rgb(0, 76, 255);
     color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.638);
 }
 
 #blue input::placeholder {

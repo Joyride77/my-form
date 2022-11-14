@@ -9,35 +9,47 @@
 </head>
 
 <body>
-    <h1>My Form</h1>
-
-    <div class="form-container">
-        <form id="my-form" action="result.html">
-            <input type="text" name="first-name" placeholder="First name">
-            <input type="text" name="surname" placeholder="Surname">
-            <input type="email" name="email" placeholder="Email">
-            <input type="number" name="phone-number" placeholder="Phone number">
-            <input type="password" name="password" placeholder="Password">
-            <div>
-                <input type="radio" name="gender">
-                <label for="gender">Male</label>
+    <form id="my-form" action="result.html">
+        <div class="row container">
+            <div class="background-white col-2">
+                    <h1 class="blue">General Information</h1>
+                    <input type="text" name="first-name" placeholder="First name">
+                    <input type="text" name="surname" placeholder="Surname">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="date" name="birth-date">
+                    <input type="text" name="company" placeholder="Company">
+                    <select name="position">
+                        <option>Position</option>
+                        <option>Manager</option>
+                        <option>Engineer</option>
+                        <option>Security</option>
+                    </select>
             </div>
-            <div>
-                <input type="radio" name="gender" id="female">
-                <label for="gender">Female</label>
+            <div class="background-blue col-2">
+                <h1 class="white">Contact Details</h1>
+                    <input type="text" name="address-street" placeholder="Street">
+                    <input type="text" name="address-add-info" placeholder="Additional Information">
+                    <input type="number" name="zip-code" placeholder="Zip-code">
+                    <select name="place">
+                        <option>Place</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <select name="country">
+                        <option>Country</option>
+                        <option>Mongolia</option>
+                        <option>Korea</option>
+                        <option>Japan</option>
+                    </select>
+                    <input type="number" name="code" placeholder="Code">
+                    <input type="number" name="phone-number" placeholder="Phone Number">
+                    <input type="checkbox" name="terms-condition">
+                    <label for="terms-condition">I do accept the <a href="#">Terms and Conditions</a> of your site.</label>
+                    <input type="submit" value="Register Badge">
             </div>
-            <input type="date" name="birth-date">
-            <input type="time" name="birth-date-time">
-            <select name="nationality">
-                <option value="">Mongolia</option>
-                <option value="">Japan</option>
-                <option value="">Korea</option>
-            </select>
-            <textarea name="address" id="address" cols="20" rows="5" placeholder="Address"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-
-    </div>
+        </div>
+    </form>
 </body>
 
 </html>

@@ -11,10 +11,16 @@
 <body>
     <form id="my-form" action="result.html">
         <div class="row container">
-            <div id="white" class="background-white col-2">
+            <div id="white" class="background-white col-2 padding">
                     <h1 class="blue">General Information</h1>
-                    <input type="text" name="first-name" placeholder="First name">
-                    <input type="text" name="surname" placeholder="Surname">
+                    <div class="row gap">
+                        <div class="col-2">
+                            <input type="text" name="first-name" placeholder="First name">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="surname" placeholder="Surname">
+                        </div>
+                    </div>
                     <input type="email" name="email" placeholder="Email">
                     <input type="date" name="birth-date">
                     <input type="text" name="company" placeholder="Company">
@@ -25,28 +31,42 @@
                         <option>Security</option>
                     </select>
             </div>
-            <div id="blue" class="background-blue col-2">
+            <div id="blue" class="background-blue col-2 padding">
                 <h1 class="white">Contact Details</h1>
                     <input type="text" name="address-street" placeholder="Street">
                     <input type="text" name="address-add-info" placeholder="Additional Information">
-                    <input type="number" name="zip-code" placeholder="Zip-code">
-                    <select name="place">
-                        <option>Place</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
+                    <div class="row gap">
+                        <div class="col-2">
+                            <input type="number" name="zip-code" placeholder="Zip-code">
+                        </div>
+                        <div class="col-2">
+                            <select name="place">
+                                <option>Place</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+
+                    </div>
                     <select name="country">
                         <option>Country</option>
                         <option>Mongolia</option>
                         <option>Korea</option>
                         <option>Japan</option>
                     </select>
-                    <input type="number" name="code" placeholder="Code">
-                    <input type="number" name="phone-number" placeholder="Phone Number">
+                    <div class="row gap">
+                        <div class="col-2">
+                            <input type="number" name="code" placeholder="Code">
+                        </div>
+                        <div class="col-2">
+                            <input type="number" name="phone-number" placeholder="Phone Number">
+                        </div>
+
+                    </div>
                     <input type="checkbox" name="terms-condition">
-                    <label for="terms-condition">I do accept the <a href="#">Terms and Conditions</a> of your site.</label>
-                    <input type="submit" value="Register Badge">
+                    <label class="white" for="terms-condition">I do accept the <a href="#">Terms and Conditions</a> of your site.</label>
+                    <button id="submit-btn" type="submit">Register Badge</button>
             </div>
         </div>
     </form>
